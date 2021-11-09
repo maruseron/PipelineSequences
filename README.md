@@ -16,7 +16,7 @@ Sequence.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     .forEach(console.log);
 ```
 ## Pipes vs Fluent Interfaces
-There are a couple challenges to implementing pipe functions for basically anything that should exhibit lazy intermediate behavior, such as _properly defining an arbitrary arity, type-safe pipe function_ - even "avant-garde" JavaScript libraries like RxJS don't have this. Instead, they use the same technique I apply here, which is manually defining overloaded signatures pipes for up to 9-10 operators and an implementation using any.
+There are a couple challenges to implementing pipe functions for basically anything that should exhibit lazy intermediate behavior, such as _properly defining an arbitrary arity, type-safe pipe function_ - even "avant-garde" JavaScript libraries like RxJS don't have this. Instead, they use the same technique I apply here, which is manually defining overloaded signatures for pipes up to 9-10 operators and made an implementation using any.
 
 To add another disadvantage, one could make the argument that the latter (method chaining) looks cleaner, since it's more similar to "proper" method piping as seen in functional languages. For example, the same code in a language similar to F# would be something along the lines of:
 ```fsharp
