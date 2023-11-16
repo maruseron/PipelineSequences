@@ -24,7 +24,7 @@ Sequence.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     |> filter(fun item -> item % 2 = 0)
     |> map(fun item -> item.ToString())
     |> flatMap(fun item -> Sequence.from(item))
-    |> iter (fun item -> printfn "%s" item)
+    |> iter(fun item -> printfn "%s" item)
 ```
 
 ## If that's the case, then... why bother? 
